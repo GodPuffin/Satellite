@@ -29,6 +29,45 @@ namespace Satellite.Components
             if (type.Equals("null"))
             {
 
+            }
+            else if (type.Equals("trail-spr"))
+            {
+
+                _particleTexture = texture;
+
+                TextureRegion2D textureRegion = new TextureRegion2D(_particleTexture);
+
+                _emitter = new ParticleEmitter(textureRegion, 100, TimeSpan.FromSeconds(0.75),
+                Profile.Spray(new Vector2(0, 0), 1.5f))
+                {
+                    Parameters = new ParticleReleaseParameters
+                    {
+                        Speed = new Range<float>(10f, 50f),
+                        Quantity = 1,
+                        Rotation = new Range<float>(-1f, 1f),
+                        Scale = new Range<float>(0.9f, 1.1f)
+                    },
+                    Modifiers =
+            {
+                new AgeModifier()
+            {
+                Interpolators = new List<Interpolator>()
+                {
+                    new ScaleInterpolator { StartValue = new Vector2(1,1), EndValue = new Vector2(0,0) }
+                 }
+            }
+            }
+                };
+
+                _particleEffect = new ParticleEffect(autoTrigger: false)
+                {
+                    //Position = Position,
+                    Emitters = new List<ParticleEmitter>
+                {
+                _emitter
+                }
+                };
+
             } else if (type.Equals("trail")) {
 
                 _particleTexture = texture;

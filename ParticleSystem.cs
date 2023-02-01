@@ -11,7 +11,6 @@ namespace Satellite
     public class ParticleSystem : EntityUpdateSystem
     {
         private ComponentMapper<ParticleComponent> _particleComponentMapper;
-        private ComponentMapper<PositionComponent> _positionComponentMapper;
 
         public ParticleSystem() : base(Aspect.One(typeof(ParticleComponent)))
         {
@@ -20,7 +19,6 @@ namespace Satellite
         public override void Initialize(IComponentMapperService mapperService)
         {
             _particleComponentMapper = mapperService.GetMapper<ParticleComponent>();
-            _positionComponentMapper = mapperService.GetMapper<PositionComponent>();
         }
 
         public override void Update(GameTime gameTime)
