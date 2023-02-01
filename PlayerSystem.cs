@@ -16,7 +16,7 @@ namespace Satellite
         private ComponentMapper<PositionComponent> _positionMapper;
         private ComponentMapper<PlayerComponent> _playerMapper;
 
-        private const float _friction = 1.1f;
+        private const float _friction = 1.03f;
         public PlayerSystem() : base(Aspect.All(typeof(PlayerComponent), typeof(PositionComponent)))
         {
         }
@@ -42,19 +42,19 @@ namespace Satellite
 
                 if (KeyboardExtended.GetState().IsKeyDown(Keys.A))
                 {
-                    spdRot += 0.01f;
+                    spdRot += 0.007f;
                 }
                 if (KeyboardExtended.GetState().IsKeyDown(Keys.D))
                 {
-                    spdRot -= 0.01f;
+                    spdRot -= 0.007f;
                 }
                 if (KeyboardExtended.GetState().IsKeyDown(Keys.W))
                 {
-                    playerSpd += 0.05f;
+                    playerSpd += 0.4f;
                 }
                 if (KeyboardExtended.GetState().IsKeyDown(Keys.S))
                 {
-                    playerSpd -= 0.01f;
+                    playerSpd -= 0.15f;
                 }
 
                 Spd.X -= (float)(playerSpd * Math.Sin(Rot));
@@ -65,7 +65,8 @@ namespace Satellite
 
                 Rot += spdRot;
 
-                playerSpd /= _friction;
+                //playerSpd /= _friction; - for like a car-ish drift effect
+                playerSpd = 0;
                 Spd.X /= _friction;
                 Spd.Y /= _friction;
                 spdRot /= _friction;
