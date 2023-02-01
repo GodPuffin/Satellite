@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace Satellite.Components
 {
-    internal class PlayerComponent
+    public class PlayerComponent
     {
-        public Transform2 position;
-        public Transform2 velocity;
+        public float spd = 0;
     }
 }

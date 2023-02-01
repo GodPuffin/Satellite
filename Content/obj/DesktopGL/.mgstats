@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Spaceship.png","C:/Users/HP USER/source/repos/Satellite/Satellite/Content/bin/DesktopGL/Spaceship.xnb","TextureProcessor","Texture2DContent",943,16469,0.2142534
+"C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Thrust.png","C:/Users/HP USER/source/repos/Satellite/Satellite/Content/bin/DesktopGL/Thrust.xnb","TextureProcessor","Texture2DContent",234,16469,0.0044556

@@ -27,3 +27,6 @@ C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\MonoGame.Exte
 C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\MonoGame.Extended.Entities.dll
 C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\MonoGame.Extended.Particles.dll
+C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\MonoGame.Extended.Input.dll
+C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\Content\Spaceship.xnb
+C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\Content\Thrust.xnb

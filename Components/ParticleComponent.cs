@@ -19,14 +19,53 @@ namespace Satellite.Components
 
         public ParticleEffect _particleEffect;
         public Texture2D _particleTexture;
+        public ParticleEmitter _emitter;
 
         public ParticleComponent()
         { }
 
-        public void LoadParticleContent(string type, GraphicsDevice graphicsDevice) { 
+        public void LoadParticleContent(string type, GraphicsDevice graphicsDevice, Texture2D texture = null) {
 
             if (type.Equals("null"))
             {
+
+            } else if (type.Equals("trail")) {
+
+                _particleTexture = texture;
+
+                TextureRegion2D textureRegion = new TextureRegion2D(_particleTexture);
+
+                _emitter = new ParticleEmitter(textureRegion, 100, TimeSpan.FromSeconds(0.75),
+                Profile.Point())
+                {
+                    Parameters = new ParticleReleaseParameters
+                    {
+                        Speed = new Range<float>(10f, 50f),
+                        Quantity = 1,
+                        Rotation = new Range<float>(-1f, 1f),
+                        Scale = new Range<float>(0.9f, 1.1f)
+                    },
+                    Modifiers =
+            {
+                new RotationModifier {RotationRate = -1f},
+                new AgeModifier()
+            {
+                Interpolators = new List<Interpolator>()
+                {
+                    new ScaleInterpolator { StartValue = new Vector2(1,1), EndValue = new Vector2(0,0) }
+                 }
+            }
+            }
+                };
+
+                _particleEffect = new ParticleEffect(autoTrigger: false)
+                {
+                   //Position = Position,
+                    Emitters = new List<ParticleEmitter>
+                {
+                _emitter
+                }
+                };
 
             }
             else
@@ -36,7 +75,7 @@ namespace Satellite.Components
 
                 TextureRegion2D textureRegion = new TextureRegion2D(_particleTexture);
 
-                ParticleEmitter Emitter = new ParticleEmitter(textureRegion, 500, TimeSpan.MaxValue,
+                _emitter = new ParticleEmitter(textureRegion, 500, TimeSpan.MaxValue,
                 Profile.BoxFill(graphicsDevice.Viewport.Width, graphicsDevice.Viewport.Height))
                 {
                     Parameters = new ParticleReleaseParameters
@@ -57,7 +96,7 @@ namespace Satellite.Components
                     Position = new Vector2(graphicsDevice.Viewport.Width / 2, graphicsDevice.Viewport.Height / 2),
                     Emitters = new List<ParticleEmitter>
                 {
-                Emitter
+                _emitter
                 }
                 };
             }
