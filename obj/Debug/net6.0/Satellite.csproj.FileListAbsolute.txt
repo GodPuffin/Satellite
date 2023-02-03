@@ -30,3 +30,8 @@ C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\MonoGame.Exte
 C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\MonoGame.Extended.Input.dll
 C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\Content\Spaceship.xnb
 C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\Content\Thrust.xnb
+C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\Content\Laser.xnb
+C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\Content\Laser-2.xnb
+C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\Content\Spaceship-2.xnb
+C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\Content\Spaceship-3.xnb
+C:\Users\HP USER\source\repos\Satellite\Satellite\bin\Debug\net6.0\Content\Thrust-2.xnb

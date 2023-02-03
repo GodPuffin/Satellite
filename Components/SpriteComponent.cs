@@ -12,10 +12,11 @@ namespace Satellite.Components
 
         public Texture2D Texture;
 
-        /*public void LoadSprite(Texture2D texture)
+        public SpriteComponent() { }
+        public SpriteComponent(Texture2D texture)
         {
             Texture = texture;
-        }*/
+        }
 
     }
 }

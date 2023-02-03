@@ -1,3 +1,8 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Spaceship.png","C:/Users/HP USER/source/repos/Satellite/Satellite/Content/bin/DesktopGL/Spaceship.xnb","TextureProcessor","Texture2DContent",943,16469,0.2142534
-"C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Thrust.png","C:/Users/HP USER/source/repos/Satellite/Satellite/Content/bin/DesktopGL/Thrust.xnb","TextureProcessor","Texture2DContent",234,16469,0.0044556
+"C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Laser-2.png","C:/Users/HP USER/source/repos/Satellite/Satellite/Content/bin/DesktopGL/Laser-2.xnb","TextureProcessor","Texture2DContent",260,477,0.38939
+"C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Laser.png","C:/Users/HP USER/source/repos/Satellite/Satellite/Content/bin/DesktopGL/Laser.xnb","TextureProcessor","Texture2DContent",198,325,0.0056354
+"C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Spaceship-2.png","C:/Users/HP USER/source/repos/Satellite/Satellite/Content/bin/DesktopGL/Spaceship-2.xnb","TextureProcessor","Texture2DContent",922,16469,0.0247144
+"C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Spaceship-3.png","C:/Users/HP USER/source/repos/Satellite/Satellite/Content/bin/DesktopGL/Spaceship-3.xnb","TextureProcessor","Texture2DContent",1098,16469,0.0128546
+"C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Spaceship.png","C:/Users/HP USER/source/repos/Satellite/Satellite/Content/bin/DesktopGL/Spaceship.xnb","TextureProcessor","Texture2DContent",943,16469,0.0130572
+"C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Thrust-2.png","C:/Users/HP USER/source/repos/Satellite/Satellite/Content/bin/DesktopGL/Thrust-2.xnb","TextureProcessor","Texture2DContent",176,4181,0.013393
+"C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Thrust.png","C:/Users/HP USER/source/repos/Satellite/Satellite/Content/bin/DesktopGL/Thrust.xnb","TextureProcessor","Texture2DContent",234,16469,0.0084985

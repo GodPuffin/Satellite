@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Satellite.Components;
+using MonoGame.Extended.TextureAtlases;
 
 namespace Satellite
 {
@@ -39,7 +40,8 @@ namespace Satellite
 
             foreach (var entityID in ActiveEntities)
             {
-                _spriteBatch.Draw(_spriteMapper.Get(entityID).Texture, _positionMapper.Get(entityID).location.Position, null, Color.White, -_positionMapper.Get(entityID).location.Rotation, new Microsoft.Xna.Framework.Vector2(32, 32), new Vector2(1, 1), new SpriteEffects(), 0f);
+                TextureRegion2D textureRegion2D = new TextureRegion2D(_spriteMapper.Get(entityID).Texture);
+                _spriteBatch.Draw(_spriteMapper.Get(entityID).Texture, _positionMapper.Get(entityID).location.Position, null, Color.White, -_positionMapper.Get(entityID).location.Rotation, new Vector2(textureRegion2D.Width/2, textureRegion2D.Height/2), new Vector2(1, 1), new SpriteEffects(), 0f);
             }
             _spriteBatch.End();
         }

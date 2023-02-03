@@ -4,10 +4,20 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Laser-2.png</File>
+    <File>C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Laser.png</File>
+    <File>C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Spaceship-2.png</File>
+    <File>C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Spaceship-3.png</File>
     <File>C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Spaceship.png</File>
+    <File>C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Thrust-2.png</File>
     <File>C:/Users/HP USER/source/repos/Satellite/Satellite/Content/Thrust.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
